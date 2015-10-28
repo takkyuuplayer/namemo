@@ -5,7 +5,7 @@ TESTRUNNER=vendor/bin/testrunner
 setup:
 	$(CURL) -s https://getcomposer.org/installer | php
 
-install: setup
+install:
 	$(PHP) composer.phar install
 	$(PHP) vendor/bin/testrunner compile -p vendor/autoload.php
 
